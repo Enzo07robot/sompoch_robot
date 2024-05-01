@@ -119,7 +119,7 @@
 </gazebo>
 
 <joint name="caster_wheel_front_joint" type="continuous">
-    <parent link="base_link"/>
+    <parent link="base_chassis_wheel"/>
     <child link="caster_wheel_front"/>
     <origin xyz="0.12 0 -0.02125"  rpy="0 0 0"/>
     <axis xyz="0 1 1"/>
@@ -147,7 +147,7 @@
 </gazebo>
 
 <joint name="caster_wheel_back_joint" type="continuous">
-    <parent link="base_link"/>
+    <parent link="base_chassis_wheel"/>
     <child link="caster_wheel_back"/>
     <origin xyz="-0.12 0 -0.02125" rpy="0 0 0"/>
     <axis xyz="0 1 1"/>

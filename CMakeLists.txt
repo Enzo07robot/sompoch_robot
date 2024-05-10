@@ -33,8 +33,12 @@ if(BUILD_TESTING)
 endif()
 
 install(
-  DIRECTORY config description launch worlds
-  DESTINATION share/${PROJECT_NAME}
+  DIRECTORY config description launch worlds 
+  DESTINATION share/${PROJECT_NAME} 
 )
+# install(
+#   DIRECTORY spawner_ros2
+#   DESTINATION lib/${PROJECT_NAME} 
+# )
 
 ament_package()

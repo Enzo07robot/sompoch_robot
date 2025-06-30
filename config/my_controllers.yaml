@@ -1,6 +1,6 @@
 controller_manager:
   ros__parameters:
-    update_rate: 30
+    update_rate: 80  #จากเดิม 50
     # use_sim_time: true
 
     diff_cont:
@@ -12,16 +12,18 @@ controller_manager:
 diff_cont:
   ros__parameters:
 
-    publish_rate: 50.0
+    publish_rate: 80.0  #จากเดิม 80.0
 
     base_frame_id: base_link
 
     left_wheel_names: ['left_wheel_joint']
     right_wheel_names: ['right_wheel_joint']
-    wheel_separation: 0.4
+    wheel_separation: 0.46
     wheel_radius: 0.065
 
     use_stamped_vel: false
+
+    velocity_rolling_window_size: 10
 
     # open_loop: false    
 
